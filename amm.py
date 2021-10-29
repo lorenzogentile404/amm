@@ -92,7 +92,7 @@ class amm:
         
 # Format utility
 def f(v):
-    return '{0: <10}'.format(round(v,1))
+    return '{0: <10}'.format(round(v,3))
 
 # Values of t_0 and t_1 in $ (for simplicity both equal to 1)
 v_t_0 = 1
@@ -121,4 +121,3 @@ AMM.sr(M,25.9,20.6)
 
 # Compute and print profit of the attacker M
 print("Profit of M = " + f(M.get_v() - v_M_pre) + "$")
-
